@@ -1,0 +1,105 @@
+:root {
+    /* Colors - name by function, not appearance */
+    --bg-color-blueviolet: #8a2be2
+        /* your main brand color */
+    ;
+    --bg-color-pink: #ffc0cb
+        /* for emphasis and calls-to-action */
+    ;
+    --bg-color-orangered: #ff4500;
+    /* page background */
+    ;
+    --bg-color-orchid: #da70d6
+        /* default text color */;
+    
+    --color-white: #ffffff;
+    --color-black: #000000;
+    
+    /* Spacing - build a scale using multiples */
+    --space-sm: 1px;
+    /* smallest gap */
+    ;
+    --space-md: 2px;
+    /* comfortable default */
+    ;
+    --space-lg: 3px;
+    /* section breaks */
+    ;
+        /* major separations */
+    ;
+
+    /* Typography - define your font stack */
+    --font-playwright: "Playwrite GB J Guides";
+    --font-bitcount: "Bitcount Single"
+}
+
+header {
+    font-family: var(--font-playwright), cursive;
+    font-size: 8rem;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-align: right;
+    /* font-size: xx-large; */
+    font-family: var(--font-bitcount), system-ui;
+    font-weight: 400;
+}
+
+.box {
+    display: inline-block;
+
+    width: 250px;
+    height: 250px;
+    margin: 8px;
+
+    position: relative;
+
+}
+
+.box>p {
+    font-size: 1.5rem;
+
+    
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.box-1 {
+    background-color: var(--bg-color-blueviolet);
+    color: var(--color-white);
+}
+
+.box-2 {
+    background-color: var(--bg-color-pink);
+    color: var(--color-black);
+}
+
+.box-3 {
+    background-color: var(--bg-color-orangered);
+    color: var(--color-white);
+}
+
+.box-4 {
+    background-color: var(--bg-color-orchid);
+    color: var(--color-black);
+}
+
+.letter-space-1 {
+    letter-spacing: var(--space-sm);
+}
+
+.letter-space-2 {
+    letter-spacing: var(--space-md);
+}
+
+.letter-space-3 {
+    letter-spacing: var(--space-lg);
+}
